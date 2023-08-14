@@ -4,17 +4,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.koreait.controllers.BoardDataForm;
-import org.koreait.models.board.BoardData;
-import org.koreait.models.board.BoardValidationException;
-import org.koreait.models.board.InfoService;
-import org.koreait.models.board.SaveService;
+import org.koreait.models.BoardData;
+import org.koreait.models.BoardValidationException;
+import org.koreait.models.InfoService;
+import org.koreait.models.SaveService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @DisplayName("게시글 저장 테스트")
+@Transactional //테스트 시 추가데이터 롤백
 public class BoardSaveServiceTest {
 
     @Autowired

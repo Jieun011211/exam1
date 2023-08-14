@@ -1,7 +1,6 @@
-package org.koreait.models.board;
+package org.koreait.models;
 
 import org.koreait.controllers.BoardDataForm;
-import org.koreait.models.board.BoardValidationException;
 import org.koreait.validators.RequiredValidator;
 import org.koreait.validators.Validator;
 

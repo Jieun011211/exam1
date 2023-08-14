@@ -1,4 +1,4 @@
-package org.koreait.models.board;
+package org.koreait.models;
 
 import lombok.Builder;
 import lombok.Data;
