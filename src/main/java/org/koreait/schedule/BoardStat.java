@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BoardStat {
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(cron = "0 0 1 * * *")
     public void makeStat() {
-        System.out.println("5초마다 실행");
+        System.out.println("매일 새벽 1시 정각마다 실행");
     }
 }
